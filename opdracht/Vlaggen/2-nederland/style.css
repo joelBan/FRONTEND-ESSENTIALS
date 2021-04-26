@@ -1,0 +1,48 @@
+/* Hier hoef je niks mee te doen */
+*{
+    font-size:0;
+}
+
+#polen{
+    width: 800px;
+    height: 500px;
+    border: 1px solid black;
+}
+
+/* Hieronder kun je gaan editen */
+
+#bovenkant{
+    width: 800px;
+    height: 250px;
+    background-color: white;
+}
+
+#onderkant{
+    width: 800px;
+    height: 250px;
+    background-color: red
+}
+
+#nederland{
+    width: 800px;
+    height: 500px;
+    border: 1px solid black;
+}
+
+#rood{
+    width: 800px;
+    height: 166px;
+    background-color: red;
+}
+
+#wit{
+    width: 800px;
+    height: 166px;
+    background-color: white;
+}
+
+#blauw{
+    width: 800px;
+    height: 166px;
+    background-color: blue;
+}

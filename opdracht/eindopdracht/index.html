@@ -7,8 +7,28 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-    <div class="container status">
+    <h1></h1>
+    <h2></h2>
+
+    <table>
+        <tr>
+            <th>Voornaam</th>
+            <th>Achternaam</th>
+            <th>Leeftijd</th>
+            <th>Email</th>
+            <th>Woonplaats</th>
+        </tr>
+        <tr>
+            <td class="voornaam"></td>
+            <td class="achternaam"></td>
+            <td class="leeftijd"></td>
+            <td class="email"></td>
+            <td class="woonplaats"></td>
+
+        </tr>
+    </table>
+   
+    <!-- <div class="container status">
         
     </div>
     <div class="container">
@@ -20,19 +40,42 @@
         <div class="col">
         </div>
         <div class="response"></div>
-    </div>
+    </div> -->
     <script>
         
         let persoon = {
             voornaam : prompt("Wat is je naam?"),
             achternaam : prompt("Wat is je achternaam?"),
             leeftijd : prompt("Wat is je leeftijd?"),
-        };
-
-
-
+            email: prompt("Wat is je E-mail?"),
+            woonplaats: prompt("Wat is je woonplaats?")
+        }
         
-        
-    </script>
+        document.querySelector("h1").innerHTML = persoon.voornaam;
+        document.querySelector("h2").innerHTML = persoon.achternaam;
+        document.querySelector(".voornaam").innerHTML= persoon.voornaam;
+        document.querySelector(".achternaam").innerHTML= persoon.achternaam;
+        document.querySelector(".leeftijd").innerHTML= persoon.leeftijd;
+        document.querySelector(".email").innerHTML= persoon.email;
+        document.querySelector(".woonplaats").innerHTML= persoon.woonplaats;
+
+
+         if (persoon.leeftijd == 16) {
+             document.querySelector("body").style.backgroundColor = "orange";
+         } 
+         else if (persoon.leeftijd == 17) {
+             document.querySelector("body").style.backgroundColor = "blue";
+         } 
+          else if (persoon.leeftijd == 18) {
+             document.querySelector("body").style.backgroundColor = "gold";
+         } 
+        else if (persoon.leeftijd == 19) {
+             document.querySelector("body").style.backgroundColor = "green";
+         } 
+         else {
+         document.querySelector("body").style.backgroundColor = "red";
+         };
+    
+    </script> 
 </body>
 </html>
